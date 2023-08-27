@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width:100%;
+  font-family: Poppins, Verdana;
+}
+.container{
+  width: 100%;
+  margin: 0;
+}
+
+.principal{
+  margin: 0 auto;
+  padding-top:10%;
+  color: #FDE720;
+  height: 100vh;
+  background-color: #2D2D2F;
+  //background-image: url("https://media.discordapp.net/attachments/875451926211346504/1145119013052108842/computer-software-coding-with-abstract-binary-data_163855-142.png?width=1138&height=683");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.usarAgora{
+  font-weight: bold;
+  margin-top: 2vh;
+  padding: 15px;
+  width: 200px;
+  border-radius: 20px;
+  border-style: none;
+  background-color: #FCF534;
+  transition: 1s;
+  font-size:20px;
+  color: #2D2D2F;
+}
+
+.usarAgora:hover{
+  background-color:white;
+  color: black;
+}
+
+.parte2{
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 6vh 20vh;
+  padding-bottom:20px;
+}
+
+.logo{
+  margin-left:20%;
+}
+
+.parte3{
+  margin-top:20px;
+  font-size:30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 20px;
+}
+
+.lista-de-rec{
+  margin-top: 4vh;
+  list-style:none;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:20px;
+  padding: 10px;
+}
+
+.lista-de-rec li {
+  background-color: #FDE720;
+  height: 100%;
+  padding: 10px;
+  border-radius:10px;
+  transition: 2s;
+}
+
+.lista-de-red li:hover{
+  background-color: #171607;
+}
