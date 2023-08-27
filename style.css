@@ -78,9 +78,9 @@ body{
   height: 100%;
   padding: 10px;
   border-radius:10px;
-  transition: 2s;
+  transition: 1.5s;
 }
 
-.lista-de-red li:hover{
-  background-color: #171607;
+.lista-de-rec li:hover{
+  background-color: #F9F57C;
 }
