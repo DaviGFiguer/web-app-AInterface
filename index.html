@@ -20,6 +20,29 @@
 </head>
 
 <body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="#">AInterface</a></div>
+      <ul class="links">
+        <li><a href="#" onclick="scrollToElement(document.getElementById('sobre'))">Sobre</a></li>
+        <li><a href="#" onclick="scrollToElement(document.getElementById('recursos'))">Recursos Destacados</a></li>
+        <li><a href="hero">Cadastro</a></li>
+        <li><a href="hero">Login<i class="bi bi-box-arrow-in-right"></i></a></li>
+      </ul>
+
+      <div class="toggle_btn">
+        <i class="bi bi-list"></i>
+      </div>
+
+      <div class="dropdown_menu open">
+        <li><a href="#">Sobre</a></li>
+        <li><a href="hero">Recursos Destacados</a></li>
+        <li><a href="hero">Cadastro</a></li>
+        <li><a href="hero">Login</a></li>
+
+      </div>
+    </div>
+  </header>
   <div class="container">
 
     <div class="principal">
@@ -32,7 +55,7 @@
 
     </div>
 
-    <div class="parte2">
+    <div class="parte2" id="sobre">
 
       <h3 class="titulo-bem-vindo">Bem-vindo à AInterface</h3>
       <img src="https://media.discordapp.net/attachments/1093014165012103229/1145136069399019670/A_interface_logo.png"
@@ -52,7 +75,7 @@
 
     </div>
 
-    <div class="parte3">
+    <div class="parte3" id="recursos">
       <h3>Recursos Destacados: </h3>
       <ul class="lista-de-rec">
         <li>
@@ -81,3 +104,30 @@
 </body>
 
 </html>
+
+<script>
+  const toggleBtn = document.querySelector('.toggle_btn');
+  const toggleBtnIcon = document.querySelector('.toggle_btn i');
+  const dropDownMenu = document.querySelector('.dropdown_menu');
+
+  let isOpen = false;
+
+  toggleBtn.onclick = function () {
+    isOpen = !isOpen;
+
+    if (!isOpen) {
+      dropDownMenu.style.display = 'block'
+      toggleBtnIcon.classList = 'bi bi-x';
+    } else {
+      dropDownMenu.style.display = 'none'
+      toggleBtnIcon.classList = 'bi bi-list';
+    }
+  };
+
+  function scrollToElement(element) {
+    window.scrollTo({
+      behavior: 'smooth',
+      top: element.offsetTop,
+    });
+  }
+</script>
