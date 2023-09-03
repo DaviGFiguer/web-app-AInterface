@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+}
+
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #2D2D2F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.left-login > h1 {
+    font-size: 7vw;
+    color: #FDE720;
+    font-family: Poppins, Verdana;
+    font-size: 60px;
+    padding-left: 30px 0px 0px 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    
+
+    
+}
+
+.logosite{
+width: 18vw;
+
+}
+
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins, Verdana;
+    flex-direction: column;
+
+}
+
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 40px;
+    background: #FDE720;
+    border-radius: 20px; 
+}
+
+
+.card-login > h1{
+    color: #000000;
+    font-weight: 800;
+    margin: 0;
+    font-family: Poppins, Verdana;
+}
+
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: Poppins, Verdana;
+    margin: 15px 0px;
+}
+
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    background: white;
+    color: gray;
+    font-size: 18px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+.textfield > label{
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+
+.textfield > input::placeholder{
+    color: #00000094;
+}
+
+
+.btn-login{
+width: 100%;
+padding: 20px 0px;
+margin: 25px;
+border: none;
+border-radius: 20px;
+outline: none;
+text-transform: uppercase;
+font-weight: 800;
+letter-spacing: 3px;
+background: #000000;
+font-weight: bold;
+cursor: pointer;
+transition: 1s;
+}
+
+.btn-login:hover {
+    background-color:white;
+    color: black;
+}
+
+
+.btn-login{
+    font-size: 15px;
+    align-items: center;
+    font-family: Poppins, Verdana;
+    color: white;
+}
+
+
+.btn-cadastrar {
+width: 100%; 
+padding: 20px 60px;
+margin: 25px 0 0; 
+border: none;
+border-radius: 20px;
+outline: none;
+text-transform: uppercase;
+font-weight: 800;
+letter-spacing: 3px;
+background: #000000;
+font-weight: bold;
+cursor: pointer;
+transition: 1s;
+color: white;
+text-align: center;
+}
+
+
+.btn-cadastrar:hover {
+    background-color:white;
+    color: black;
+}
+
+
+.forgot-password {
+    color: #00000094;
+    text-decoration: none; 
+    font-size: 14px;
+    margin-top: 10px;
+    transition: color 0.3s; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.forgot-password:hover {
+    color: #ffffff; 
+}
+
+.link-botao-login{
+    width:100%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+}
+
+@media (max-width: 940px){
+    .left-login{
+        display: none;
+    }
+    .right-login{
+        width: 100%;
+    }
+
+}
+
+
+
+
