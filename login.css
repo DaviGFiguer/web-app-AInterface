@@ -186,6 +186,7 @@ text-align: center;
     padding: 0;
     margin: 0 auto;
     display: flex;
+    text-decoration: none;
 }
 
 @media (max-width: 940px){
