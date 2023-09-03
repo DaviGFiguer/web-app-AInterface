@@ -8,6 +8,21 @@ body{
   width:100%;
   font-family: Poppins, Verdana;
 }
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #2D2D2F;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #F9F57C;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #2D2D2F;  /* creates padding around scroll thumb */
+}
+
 .container{
   width: 100%;
   margin: 0;
