@@ -1,10 +1,14 @@
+$( document ).ready(function() {
+/*
 //form elements contained into consts
-const signup_form = document.getElementById("signup_form")
-const username = document.getElementById("username");
-const email = document.getElementById("e-mail");
-const phone_number = document.getElementById("phone_number");
-const user_password = document.getElementById("password");
-const password_confirmation = document.getElementById("password_confirmation");
+function capture_fields(){
+  let signup_form = $("#signup_form").val();
+  let username = $("#username").val();
+  let email = $("#e-mail").val();
+  let phone_number = $("#phone_number").val();
+  let user_password = $("#password").val();
+  let password_confirmation = $("#password_confirmation").val();
+}
 
 signup_form.addEventListener("submit", (registration) => {
   //Function to check if all the form fields are valid.
@@ -23,10 +27,11 @@ signup_form.addEventListener("submit", (registration) => {
 
 //Function to check if the field: username is null or doensn't match the input "pattern".
 function check_inputted_username() {
-  const inputted_username = username.value;
+  capture_fields();
 
-  if (inputted_username === "") {
-    input_error(username, "Um nome de usuário é obrigatório para o cadastro.")
+  if (username === "") {
+    input_error(username, "Um nome de usuário é obrigatório para o cadastro.");
+    return false;
   }
   else if (inputted_username.length <= 5 || inputted_username.length > 20) {
     input_error(username, "Um nome de usuário deve conter no mínimo 6 caracteres, e no máximo 20.")
@@ -115,4 +120,58 @@ function check_registered_data() {
   if (fields_validation) {
     alert("Cadastro concluído com sucesso!");
   }
-}
+}*/
+$("#registration_button").on("click", function(){
+  let username = $("#username").val();
+  let email = $("#e-mail").val();
+  let phone_number = $("#phone_number").val();
+  let user_password = $("#password").val();
+  let password_confirmation = $("#password_confirmation").val();
+
+  if(username.trim() =="" || username==null){
+    bootbox.alert({
+      message: 'O campo usuário não deve ser vazio!',
+      backdrop: true       
+      }).find('.modal-content').css({'background-color': '#2D2D2F', 'font-weight' : 'bold', color: '#FFFFFF', 'font-size': '2em'});
+
+  }
+  else if(email.trim() == "" || email == null){
+    bootbox.alert({
+      message: 'O campo E-mail não deve ser vazio!',
+      backdrop: true       
+      }).find('.modal-content').css({'background-color': '#2D2D2F', 'font-weight' : 'bold', color: '#FFFFFF', 'font-size': '2em'});
+  }
+  else if(phone_number.trim() == "" || phone_number==null){
+    bootbox.alert({
+      message: 'O campo celular não deve ser vazio!',
+      backdrop: true       
+      }).find('.modal-content').css({'background-color': '#2D2D2F', 'font-weight' : 'bold', color: '#FFFFFF', 'font-size': '2em'});
+  }
+  else if(user_password.trim() == "" || user_password==null){
+    bootbox.alert({
+      message: 'O campo senha não deve ser vazio!',
+      backdrop: true       
+      }).find('.modal-content').css({'background-color': '#2D2D2F', 'font-weight' : 'bold', color: '#FFFFFF', 'font-size': '2em'});
+  }
+
+  else if(password_confirmation.trim() == "" || password_confirmation==null){
+    bootbox.alert({
+      message: 'O campo de confirmação da senha não deve ser vazio!',
+      backdrop: true       
+      }).find('.modal-content').css({'background-color': '#2D2D2F', 'font-weight' : 'bold', color: '#FFFFFF', 'font-size': '2em'});
+  }
+
+  else if(password_confirmation != user_password){
+    bootbox.alert({
+      message: 'As senhas não podem ser diferentes!',
+      backdrop: true       
+      }).find('.modal-content').css({'background-color': '#2D2D2F', 'font-weight' : 'bold', color: '#FFFFFF', 'font-size': '2em'});
+  }
+  else{
+    $(location).attr('href', 'chat.html');
+  }
+
+
+});
+
+});
