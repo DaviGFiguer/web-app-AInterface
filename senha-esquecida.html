@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="senha-esquecida.css">
+
+  <link rel="icon" type="image/x-icon"
+    href="https://media.discordapp.net/attachments/1093014165012103229/1145136069399019670/A_interface_logo.png">
+  <title>AInterface - Esqueci a senha</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <a href="login.html" class="voltar"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+        viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <style>
+          svg {
+            fill: #ffd500
+          }
+        </style>
+        <path
+          d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+      </svg>
+      <label class="link-voltar">Voltar</label>
+    </a>
+    <h1>Digite seu email</h1>
+    <p>Enviaremos um link de redefinição da senha</p>
+    <form action="#" method="post">
+      <input type="email" name="email" id="email">
+      <input type="hidden" name="message" value="Redefinir Senha no seguinte link: https://github.com/DaviGFiguer">
+      <!--teste-->
+
+      <input type="submit" value="Enviar" id="enviar">
+
+      <input type="hidden" name="_subject" value="Redefinir Senha!">
+      <input type="text" name="_honey" style="display: none;">
+      <input type="hidden" name="_captcha" value="false">
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="js/senha-esquecida.js"></script>
