@@ -121,7 +121,7 @@ function check_registered_data() {
     alert("Cadastro concluído com sucesso!");
   }
 }*/
-$("#registration_button").on("click", function(){
+$("#signup_form").submit(function(){
   let username = $("#username").val();
   let email = $("#e-mail").val();
   let phone_number = $("#phone_number").val();
@@ -170,6 +170,7 @@ $("#registration_button").on("click", function(){
   else{
     $(location).attr('href', 'chat.html');
   }
+  return false;
 
 
 });

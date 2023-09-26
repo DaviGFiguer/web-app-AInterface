@@ -38,48 +38,48 @@
             <p>Painel de Cadastro</p>
         </section>
 
-        <!--<form id="signup_form" class="signup_form" method="post">-->
-        <div class="signup_form">
-            <div class="form_field">
-                <label for="username">Nome de Usuário *</label>
-                <input type="text" placeholder="AInterface_user300" autocomplete="off" id="username">
-                <a>Error message by input out of pattern.</a>
+        <form id="signup_form" class="signup_form" method="post">
+            <div class="signup_form">
+                <div class="form_field">
+                    <label for="username">Nome de Usuário *</label>
+                    <input type="text" placeholder="AInterface_user300" autocomplete="off" id="username">
+                    <a>Error message by input out of pattern.</a>
+                </div>
+
+                <div class="form_field">
+                    <label for="e-mail">E-mail *</label>
+                    <input type="email" placeholder="dummy.email@AInterface.com.br" autocomplete="off" id="e-mail">
+                    <a>Error message by input out of pattern.</a>
+                </div>
+
+                <div class="form_field">
+                    <label for="phone">Celular *</label>
+                    <input type="tel" placeholder="+55 (##) #### - ####" autocomplete="off" id="phone_number">
+                    <a>Error message by input out of pattern.</a>
+                </div>
+
+                <div class="form_field">
+                    <label for="password">Digite sua Senha *</label>
+                    <input type="password" placeholder="*********" autocomplete="off" id="password">
+                    <a>Error message by input out of pattern.</a>
+                </div>
+
+                <div class="form_field">
+                    <label for="password_confirmation">Confirme sua Senha *</label>
+                    <input type="password" placeholder="*********" autocomplete="off" id="password_confirmation">
+                    <a>Error message by input out of pattern.</a>
+                </div>
+
+                <button type="submit" id="registration_button" onclick="validate_fields()">Criar Conta
+                    AInterface</button>
+
+                <div class="horizontal_line"></div>
+
+                <div class="login_ref"><a href="login.html">
+                        <p>Já possui uma conta?</p>
+                    </a></div>
             </div>
-
-            <div class="form_field">
-                <label for="e-mail">E-mail *</label>
-                <input type="email" placeholder="dummy.email@AInterface.com.br" autocomplete="off" id="e-mail">
-                <a>Error message by input out of pattern.</a>
-            </div>
-
-            <div class="form_field">
-                <label for="phone">Celular *</label>
-                <input type="tel" placeholder="+55 (##) #### - ####" autocomplete="off" id="phone_number">
-                <a>Error message by input out of pattern.</a>
-            </div>
-
-            <div class="form_field">
-                <label for="password">Digite sua Senha *</label>
-                <input type="password" placeholder="*********" autocomplete="off" id="password">
-                <a>Error message by input out of pattern.</a>
-            </div>
-
-            <div class="form_field">
-                <label for="password_confirmation">Confirme sua Senha *</label>
-                <input type="password" placeholder="*********" autocomplete="off" id="password_confirmation">
-                <a>Error message by input out of pattern.</a>
-            </div>
-
-            <button type="submit" id="registration_button" onclick="validate_fields()">Criar Conta
-                AInterface</button>
-
-            <div class="horizontal_line"></div>
-
-            <div class="login_ref"><a href="login.html">
-                    <p>Já possui uma conta?</p>
-                </a></div>
-        </div>
-        <!--</form>-->
+        </form>
     </div>
 </body>
 
