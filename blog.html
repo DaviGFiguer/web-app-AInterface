@@ -6,86 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="./style/blog.css">
+    <link rel="stylesheet" href="./style/flex.css">
+    <link rel="stylesheet" href="./style/grid.css">
     <link rel="icon"  href="assets/A_interface_logo.png">
 </head>
 
 <body>
-
-
-    <header class="menu">
-        <nav class="menu_nav">
-            <div>
-                <a class="logo" href="#">AInterface</a>
-            </div>
-            <div class="menu_link">
-            <a class="nav" href="index.hmtl">Home</a>
-            <a class="nav" href="blog.html">Blog</a>
-            </div>   
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="menu_item"><a href="index.html"> AInterface</a></li>
+                <li class="menu_item"><a href="chat.html">Chat</a></li>
+                <li class="menu_item"><a href="signup.html">Cadastrato</a></li>
+                <li class="menu_item"><a href="login.html">Login</a></li>
+                
+                <li class="menu_item menu_pesquisar">
+                    <label class="menu_label" for="procurar"><input class="menu_input" type="search" name=""
+                        placeholder="procure por qualquer coisa" id="pesquisar"></label>
+                </li>
+            </ul>
         </nav>
     </header>
 
 
-    <main class="blog">
-        <section class="blog_star">
-            <div class="blog_heading">
-                <span>últimas Atualizações</span>
-                <h3>Blog</h3>
-            </div>
+    <main class="principal">
 
-            <div class="blog_container">
+        <div class="conteudo">
 
-                <article class="blog_article">
-
-                    <div class="blog_img">
-                        <img src="./assets/img_1.webp" alt="Imagens ilustrativas">  
-                    </div>
-
-                    <div class="blog_info">
-                        <span class="blog_span">27 setemb 2023</span>
-                        <a href="#" class="blog_title">Apresentando o AInterface</a>
-                        <p class="blog_paragrafo">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
-                        <a href="#" class="blog_mais">Leia mais</a>
-                    </div>
-
-                </article>
-                
-                <article class="blog_article">
-
-                    <div class="blog_img">
-                        <img src="./assets/img_2.webp" alt="Imagens ilustrativas">  
-                    </div>
-
-                    <div class="blog_info">
-                        <span class="blog_span">27 setemb 2023</span>
-                        <a href="#" class="blog_title">Apresentando o AInterface</a>
-                        <p class="blog_paragrafo">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
-                        <a href="#" class="blog_mais">Leia mais</a>
-                    </div>
-
-                </article>
-
-                <article class="blog_article">
-
-                    <div class="blog_img">
-                        <img src="./assets/img_3.webp" alt="Imagens ilustrativas">  
-                    </div>
-
-                    <div class="blog_info">
-                        <span class="blog_span">27 setemb 2023</span>
-                        <a href="#" class="blog_title">Apresentando o AInterface</a>
-                        <p class="blog_paragrafo">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
-                        <a href="#" class="blog_mais">Leia mais</a>
-                    </div>
-
-                </article>
+            <h2 class="conteudo_titulo">Novas atualizações</h2>
             
-            </div>
+            <ul class="conteudo_lista">
+                <li class="conteudo_item">
+                    <img src="assets/img_1.webp" alt="Imagem ilustrativas">
 
+                    <div class="conteudo_informacao">
+                        <h3>Apresentando a AInterface</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+                        <h4>27 setemb 2023</h4>
+                    </div>
 
+                    <div class="conteudo_mais">
+                        <button>Leia mais</button>
+                    </div>
 
+                </li>
+                <li class="conteudo_item">
+                    <img src="assets/img_2.webp" alt="Imagem ilustrativas">
 
-            
-        </section>
+                    <div class="conteudo_informacao">
+                        <h3>Ensino com IA</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+                        <h4>27 setemb 2023</h4>
+                    </div>
+
+                    <div class="conteudo_mais">
+                        <button>Leia mais</button>
+                    </div>
+                </li>
+
+                <li class="conteudo_item">
+                    <img src="assets/img_3.webp" alt="Imagem ilustrativas">
+                    
+                    <div class="conteudo_informacao">
+                        <h3>Governaça da superinteligência</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+                        <h4>27 setemb 2023</h4>
+
+                    </div>
+                    <div class="conteudo_mais">
+                        <button >Leia mais</button>  
+                    </div>
+                </li>
+
+            </ul>
+        </div>      
     </main>
     <footer>
 
