@@ -14,9 +14,10 @@ $( document ).ready(function() {
           email: $("#e-mail").val(),
           phone_number:  $("#phone_number").val(),
           user_password: $("#password").val(),
-          password_confirmation: $("#password_confirmation").val()
+          password_confirmation: $("#password_confirmation").val(),
+          idade: $("#campo_idade").val()
       }   
-
+           
       if (usuario.username.trim() == "" || usuario.username == null){
         /*bootbox.alert({
           message: 'O Nome de usuário não deve ser vazio!',
@@ -64,7 +65,7 @@ $( document ).ready(function() {
           }).find('.modal-content').css({'background-color': '#2D2D2F', 'font-weight' : 'bold', color: '#FFFFFF', 'font-size': '2em'});
           */
         alert('Bem vindo, ' + usuario.username);
-        $(location).attr('href', 'chat.html');
+        //$(location).attr('href', 'chat.html');
         
       }
       return false;
@@ -72,4 +73,38 @@ $( document ).ready(function() {
       
   })
 
+  
+  Array.prototype.remove = function (index) {
+    this.splice(index, 1);
+  }
+
+  let lista_idade = []
+  clique = 0
+  $("#registration_button").on("click", function () {
+    usuario = {
+      username: $("#username").val(),
+      email: $("#e-mail").val(),
+      phone_number:  $("#phone_number").val(),
+      user_password: $("#password").val(),
+      password_confirmation: $("#password_confirmation").val(),
+      idade: $("#campo_idade").val()
+  }   
+    clique++
+
+
+    lista_idade.push(usuario.idade)
+    console.log(lista_idade)
+
+
+    if (clique == 6) {
+      for (i = lista_idade.length; i >= 0; i--) {
+        if (lista_idade[i] < 18) {
+          lista_idade.remove(i);
+          console.log(lista_idade)
+        }
+      }
+    }
+
+  })
 })
+
