@@ -8,6 +8,37 @@ $( document ).ready(function() {
     form_data.className = "form_field error"
   }
 
+  $("#cep").on("input",function(){
+    const cep = $("#cep").val();
+
+    if(cep ==""){
+      $("#logradouro").val("");
+      $("#bairro").val("");
+    }
+
+    const getCepUrl = `https://viacep.com.br/ws/${cep}/json`;
+
+    
+
+    var settings = {
+        "url": getCepUrl,
+        "method": "GET",            
+    };
+
+    $.ajax(settings).done(function (response) { 
+      $("#cep").val(response.cep)
+      $("#logradouro").val(response.logradouro);
+      $("#bairro").val(response.bairro);
+
+
+    });
+
+
+    
+    
+
+    });
+
   $("#signup_form").submit(function(){
       usuario = {
           username: $("#username").val(),
